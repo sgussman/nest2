@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="/stylesheet/login.css">
+	<link rel="stylesheet" href="/stylesheet/ooma.css">
+</head>
+<body>
+	<div id="login_div">
+		<form id="loginForm" method="get" action="/login/validate">
+			<div class="form-group">
+				<label for="username" class="form-label">Please enter your username: </label>
+				<input type="text" id="username" class="form-control" name="username" placeholder="Enter username">
+			</div>
+			<button id="loginBtn" class="btn btn-primary btn-lg" type="submit">Login</button>
+		</form>
+	</div>
+
+	<!-- scripts -->
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/jquery-cookie/jquery.cookie.js"></script>
+	<script src="/bower_components/firebase/firebase.js"></script>
+	<script src="/js/login.js"></script>
